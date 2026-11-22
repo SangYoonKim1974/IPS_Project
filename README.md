@@ -17,7 +17,7 @@
 
 ## 📂 문서 아카이브 (`docs/`)
 - [01. 요구사항 정의서 및 4주 개발 로드맵(WBS)](./docs/01-requirements.md)
-- `02. 데이터베이스 설계 (ERD & DDL)` *(예정)*
+- [02. 데이터베이스 설계 (ERD & DDL)](./docs/02-erd-schema.md) 
 - `03. REST API 명세서` *(예정)*
 
 - **AI Integration:** Google Gemini API (LLM 텍스트 생성·요약 및 Vision 기반 영수증 OCR)
