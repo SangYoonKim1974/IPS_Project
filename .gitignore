@@ -1,1 +1,15 @@
 
+
+# Python & 가상환경
+venv/
+__pycache__/
+*.py[cod]
+.env
+.vscode/
+
+# Python & 가상환경
+venv/
+__pycache__/
+*.py[cod]
+.env
+.vscode/
