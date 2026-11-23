@@ -2,7 +2,7 @@ from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 from app import models
-from app.api import auth
+from app.api import auth, inventory
 from app.database import Base, engine, get_db
 
 Base.metadata.create_all(bind=engine)
@@ -10,11 +10,12 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="inhouse-pm-system API",
     description="기업 내부 통합 관리 시스템 (사원·권한, 전자결재, 재고·자산, AI 업무 보조) 백엔드 API",
-    version="0.1.0",
+    version="0.2.0",
 )
 
-# 사원·권한 API 라우터 등록
+# 기능별 API 라우터 등록
 app.include_router(auth.router)
+app.include_router(inventory.router)
 
 
 @app.get("/", tags=["System"])
